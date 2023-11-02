@@ -1,14 +1,25 @@
-FROM node:16-alpine3.14
+FROM node:14-alpine
 
-RUN apk add make nasm autoconf automake libtool dpkg pkgconfig libpng libpng-dev g++
+RUN set -ex \
+    && apk update \
+    && apk add --no-cache \
+        make \
+        automake \
+        autoconf \
+        libtool \
+        libpng \
+        zlib-dev \
+        pkgconfig \
+        libpng-dev \
+        nasm \
+        g++ \
+    && rm -rf /var/cache/apk/* \
+    && rm -rf /tmp/*
 
 WORKDIR /app
-
 COPY . .
 
 RUN yarn setup
-
-
 RUN yarn build
 
 EXPOSE 3000

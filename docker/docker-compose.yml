@@ -1,16 +1,20 @@
-version: '3.1'
+version: "3.1"
 
 services:
-
   node:
     image: node:14
+    build:
+      context: ../
+      dockerfile: Dockerfile
     working_dir: /home/node/app
-    command: yarn dev
     volumes:
       - ../:/home/node/app
     ports:
       - "3000:3000"
     environment:
-      MONGODB_URI: mongodb://mongolara
+      MONGODB_URI: host.docker.internal
       MONGODB_COLLECTION: results
-      BASE_URL: http://localhost:3000
+      BASE_URL: host.docker.internal
+      PORT: 3000
+      API_URL: https://bigfive-test.com/api/
+    restart: always
