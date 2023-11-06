@@ -37,7 +37,6 @@ export default {
     }
   },
   head () {
-    console.log(this.error)
     const title =
       this.error.statusCode === 404 ? this.pageNotFound : this.otherError
     return {
