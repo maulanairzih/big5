@@ -16,6 +16,9 @@ RUN set -ex \
     && rm -rf /var/cache/apk/* \
     && rm -rf /tmp/*
 
+WORKDIR /api
+COPY . .
+
 WORKDIR /app
 COPY . .
 
