@@ -41,7 +41,7 @@
         <ShareLinks :id="'result/' + $route.params.id" />
       </div>
 
-      <div class="display-1 mt-6">
+      <!-- <div class="display-1 mt-6">
         {{ $t('results.theBigFive') }}
       </div>
       <BarChart
@@ -53,7 +53,7 @@
         :key="domain.id"
       >
         <Domain :domain="domain" />
-      </div>
+      </div> -->
       <br>
       <span class="headline">{{ $t('shareLinks.shareResults') }}</span>
       <ShareLinks :id="'result/' + $route.params.id" />
@@ -83,7 +83,6 @@ export default {
         }
       }
     } catch (error) {
-      console.log(error)
       store.commit('SET_SNACKBAR', { msg: error.message, type: 'error' })
     }
   },

@@ -163,7 +163,7 @@ export default {
     }
   },
   computed: {
-    ...mapState(['development'])
+    ...mapState(['production'])
   },
   mounted () {
     this.$amplitude.getInstance().logEvent('b5.frontpage.loaded')
