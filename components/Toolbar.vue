@@ -2,7 +2,7 @@
   <div>
     <v-app-bar
       app
-      color="white"
+      color="nav"
       class="app-bar-shadow"
     >
       <div class="toolbar-wrapper">
@@ -13,7 +13,7 @@
               name="rotate"
             >
               <v-img
-                alt="BigFive logo"
+                alt="Ruang Cahya logo"
                 class="shrink mr-2"
                 contain
                 :src="logoSrc"
