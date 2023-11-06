@@ -11,13 +11,13 @@
     >
       {{ languageId }}
     </v-chip>
-    <v-chip
+    <!-- <v-chip
       v-if="!expanded"
       @click="toggleExpand"
     >
       ... {{ languages.length - 2 }} {{ $t('test.more') }}
-    </v-chip>
-    <v-chip
+    </v-chip> -->
+    <!-- <v-chip
       v-else
       color="secondary"
       dark
@@ -26,7 +26,7 @@
       <v-icon small>
         {{ mdiClose }}
       </v-icon>
-    </v-chip>
+    </v-chip> -->
   </div>
 </template>
 

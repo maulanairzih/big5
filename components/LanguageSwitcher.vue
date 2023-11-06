@@ -51,25 +51,7 @@
 
 <script>
 import enIcon from 'svg-country-flags/svg/gb.svg'
-import heIcon from 'svg-country-flags/svg/il.svg'
-import jaIcon from 'svg-country-flags/svg/jp.svg'
-import noIcon from 'svg-country-flags/svg/no.svg'
-import dkIcon from 'svg-country-flags/svg/dk.svg'
-import seIcon from 'svg-country-flags/svg/se.svg'
-import fiIcon from 'svg-country-flags/svg/fi.svg'
-import deIcon from 'svg-country-flags/svg/de.svg'
-import esIcon from 'svg-country-flags/svg/es.svg'
-import frIcon from 'svg-country-flags/svg/fr.svg'
-import ruIcon from 'svg-country-flags/svg/ru.svg'
-import cnIcon from 'svg-country-flags/svg/cn.svg'
-import uaIcon from 'svg-country-flags/svg/ua.svg'
-import inIcon from 'svg-country-flags/svg/in.svg'
 import idIcon from 'svg-country-flags/svg/id.svg'
-import ptIcon from 'svg-country-flags/svg/br.svg'
-import itIcon from 'svg-country-flags/svg/it.svg'
-import plIcon from 'svg-country-flags/svg/pl.svg'
-import isIcon from 'svg-country-flags/svg/is.svg'
-import thIcon from 'svg-country-flags/svg/th.svg'
 
 export default {
   name: 'LanguageSwitcher',
@@ -78,25 +60,7 @@ export default {
       drawer: false,
       icons: {
         en: enIcon,
-        he: heIcon,
-        ja: jaIcon,
-        no: noIcon,
-        da: dkIcon,
-        sv: seIcon,
-        fi: fiIcon,
-        de: deIcon,
-        es: esIcon,
-        fr: frIcon,
-        ru: ruIcon,
-        'zh-Hans': cnIcon,
-        uk: uaIcon,
-        hi: inIcon,
-        id: idIcon,
-        pt: ptIcon,
-        it: itIcon,
-        pl: plIcon,
-        is: isIcon,
-        th: thIcon
+        id: idIcon
       }
     }
   },
