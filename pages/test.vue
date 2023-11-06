@@ -18,6 +18,7 @@
         height="25"
         reactive
         rounded
+        color="secondary"
         background-opacity="0.1"
         class="mb-3"
         :style="GET_PROGRESS > 49 && { color: 'white' }"
@@ -117,7 +118,7 @@ export default {
     title: 'The test'
   }),
   computed: {
-    ...mapState(['test', 'development', 'form', 'loading']),
+    ...mapState(['test', 'form', 'loading', 'production']),
     ...mapGetters(['GET_CURRENT_QUESTIONS', 'GET_PROGRESS', 'NEXT_BUTTON_STATE', 'BACK_BUTTON_STATE', 'GET_CURRENT_ANSWER'])
   },
   watch: {
